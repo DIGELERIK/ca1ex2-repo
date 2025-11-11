@@ -1,0 +1,34 @@
+git init
+git config --global user.name "John Doe"
+git status
+git branch -m master main
+git status
+git status
+git status
+git status
+git status
+git add .
+git commit -m "Initial commit"
+git branch feature-local-test
+git switch feature-local-test
+git status
+git status
+git add .
+git commit -m "Changed cloud.py"
+git status
+git switch main
+git add .
+git commit -m "Changed cloud.py in main"
+git config --global user.name "John Doe"
+git config --global user.email "johndoe@example.com"
+git merge feature-local-test
+git remote add origin https://github.com/DIGELERIK/ca1ex2-repo.git
+git push -u origin main
+git pull
+git status
+git commit -m "Merge"
+git push -u origin main
+git pull
+git push -u origin main
+git status
+Get-History | ?CommandLine -match "git" | %CommandLine > ca1ex2.txt
